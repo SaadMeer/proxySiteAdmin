@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['bar'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Year', 'Sales', 'Expenses'],
+                ['2014', 1000, 400],
+                ['2015', 1170, 460],
+                ['2016', 660, 1120],
+                ['2017', 1030, 540]
+            ]);
+
+            var options = {
+                chart: {
+                    title: 'Company Performance',
+                    subtitle: 'Sales, Expenses: 2014-2017',
+                },
+                colors: ['#6C72FF', '#57C3FF'],
+                backgroundColor: 'transparent'
+            };
+
+            var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+            chart.draw(data, google.charts.Bar.convertOptions(options));
+        }
+    </script>
+    <!-- flowbite -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+    <!-- flowbite -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Proxy User</title>
+    <link rel="icon" href="/assets/logo.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- Web-container -->
+    <div class="main-container">
+
+        <!-- sidebar start -->
+        <div class="sidebar-main-container">
+            <div class="logo-section">
+                <div class="logo-container">
+                    <a href="index.html">
+                        <img src="./assets/logo.png" alt="">
+                        <h3>ProxyHaze</h3>
+                    </a>
+                </div>
+                <div class="toggle-box-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="13" viewBox="0 0 22 13" fill="none">
+                        <mask id="mask0_37_823" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
+                            width="23" height="13">
+                            <path d="M22.0004 0.830017H0V12.83H22.0004V0.830017Z" fill="white" />
+                        </mask>
+                        <g mask="url(#mask0_37_823)">
+                            <g opacity="0.8">
+                                <path d="M14.5005 9.83002L17.5005 6.83002L14.5005 3.83002" stroke="#AEB9E1"
+                                    stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <g opacity="0.8">
+                                <path d="M7.5 3.83002L4.5 6.83002L7.5 9.83002" stroke="#AEB9E1" stroke-width="0.8"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="sidebar-menu-section">
+                <ul class="sidebar-ul">
+                    <li class="sidebar-li active">
+                        <a href="">
+                            <span class="dash-li">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 14 14"
+                                    fill="none">
+                                    <path
+                                        d="M0 6.328C0 6.12267 0.0443333 5.92433 0.133 5.733C0.221667 5.54167 0.345333 5.376 0.504 5.236L6.006 0.377999C6.29533 0.125999 6.62667 0 7 0C7.37333 0 7.70467 0.125999 7.994 0.377999L13.496 5.236C13.6547 5.376 13.7783 5.54167 13.867 5.733C13.9557 5.92433 14 6.12267 14 6.328V12.53C14 12.7913 13.9323 13.0363 13.797 13.265C13.6617 13.4937 13.482 13.6733 13.258 13.804C13.034 13.9347 12.7867 14 12.516 14H1.484C1.21333 14 0.966 13.9347 0.742 13.804C0.518 13.6733 0.338333 13.4937 0.203 13.265C0.0676667 13.0363 0 12.7913 0 12.53V6.328Z"
+                                        fill="#AEB9E1" />
+                                </svg>
+                                <span class="dash-li-name">Dashboard</span>
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10"
+                                fill="none">
+                                <path
+                                    d="M0.484 9.58887C0.372 9.58887 0.284 9.56087 0.22 9.50487C0.14 9.45687 0.08 9.38687 0.04 9.29487C0 9.20287 -0.01 9.10887 0.01 9.01287C0.03 8.91687 0.076 8.83687 0.148 8.77287L4.12 4.78887L0.148 0.804868C0.044 0.716867 -1.43051e-09 0.604868 0.016 0.468868C0.016 0.348867 0.06 0.236868 0.148 0.132868C0.244 0.0528679 0.36 0.00886822 0.496 0.000867844C0.632 -0.00713253 0.74 0.0368681 0.82 0.132868L5.14 4.45287C5.236 4.53287 5.284 4.64287 5.284 4.78287C5.284 4.92287 5.236 5.03687 5.14 5.12487L0.82 9.44487C0.74 9.54087 0.628 9.58887 0.484 9.58887Z"
+                                    fill="#AEB9E1" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="">
+                            <span class="dash-li">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 14 14"
+                                    fill="none">
+                                    <path
+                                        d="M6.58 0.238048C6.636 0.135382 6.72 0.0653811 6.832 0.0280476C6.944 -0.00928497 7.056 -0.00928497 7.168 0.0280476C7.28 0.0653811 7.364 0.135382 7.42 0.238048L9.422 3.66805C9.49667 3.78938 9.604 3.86405 9.744 3.89205L13.622 4.73205C13.7433 4.76005 13.8367 4.82071 13.902 4.91405C13.9673 5.00738 14 5.11238 14 5.22905C14 5.34571 13.958 5.45071 13.874 5.54405L11.228 8.49805C11.1347 8.60071 11.0973 8.72672 11.116 8.87605L11.508 12.824C11.5173 12.9454 11.4893 13.0527 11.424 13.146C11.3587 13.2394 11.27 13.3024 11.158 13.335C11.046 13.3677 10.934 13.3607 10.822 13.314L7.196 11.718C7.06533 11.662 6.93467 11.662 6.804 11.718L3.178 13.314C3.066 13.3607 2.954 13.3677 2.842 13.335C2.73 13.3024 2.64133 13.2394 2.576 13.146C2.51067 13.0527 2.48267 12.9454 2.492 12.824L2.884 8.87605C2.90267 8.72672 2.86533 8.60071 2.772 8.49805L0.126 5.54405C0.042 5.45071 0 5.34571 0 5.22905C0 5.11238 0.035 5.00738 0.105 4.91405C0.175 4.82071 0.270667 4.76005 0.392 4.73205L4.27 3.89205C4.40067 3.86405 4.50333 3.78938 4.578 3.66805L6.58 0.238048Z"
+                                        fill="#AEB9E1" />
+                                </svg>
+                                <span class="dash-li-name">Products</span>
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10"
+                                fill="none">
+                                <path
+                                    d="M0.484 9.58887C0.372 9.58887 0.284 9.56087 0.22 9.50487C0.14 9.45687 0.08 9.38687 0.04 9.29487C0 9.20287 -0.01 9.10887 0.01 9.01287C0.03 8.91687 0.076 8.83687 0.148 8.77287L4.12 4.78887L0.148 0.804868C0.044 0.716867 -1.43051e-09 0.604868 0.016 0.468868C0.016 0.348867 0.06 0.236868 0.148 0.132868C0.244 0.0528679 0.36 0.00886822 0.496 0.000867844C0.632 -0.00713253 0.74 0.0368681 0.82 0.132868L5.14 4.45287C5.236 4.53287 5.284 4.64287 5.284 4.78287C5.284 4.92287 5.236 5.03687 5.14 5.12487L0.82 9.44487C0.74 9.54087 0.628 9.58887 0.484 9.58887Z"
+                                    fill="#AEB9E1" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="">
+                            <span class="dash-li">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 13 13"
+                                    fill="none">
+                                    <path
+                                        d="M0 11.774C0 11.074 0.177333 10.4207 0.532 9.81405C0.877333 9.23538 1.34867 8.77105 1.946 8.42105C2.54333 8.07105 3.192 7.89605 3.892 7.89605H8.232C8.932 7.89605 9.58067 8.07105 10.178 8.42105C10.7753 8.77105 11.2467 9.23538 11.592 9.81405C11.9467 10.4207 12.124 11.074 12.124 11.774C12.124 12.1287 11.9957 12.4344 11.739 12.691C11.4823 12.9477 11.1767 13.076 10.822 13.076H1.302C0.947333 13.076 0.641667 12.9477 0.385 12.691C0.128333 12.4344 0 12.1287 0 11.774ZM6.062 6.90205C6.68733 6.90205 7.26367 6.74805 7.791 6.44005C8.31833 6.13205 8.73833 5.71438 9.051 5.18705C9.36367 4.65972 9.52 4.08338 9.52 3.45805C9.52 2.83272 9.36367 2.25638 9.051 1.72905C8.73833 1.20172 8.31833 0.781716 7.791 0.469049C7.26367 0.156383 6.68733 4.95911e-05 6.062 4.95911e-05C5.43667 4.95911e-05 4.86033 0.156383 4.333 0.469049C3.80567 0.781716 3.388 1.20172 3.08 1.72905C2.772 2.25638 2.618 2.83272 2.618 3.45805C2.618 4.08338 2.772 4.65972 3.08 5.18705C3.388 5.71438 3.80567 6.13205 4.333 6.44005C4.86033 6.74805 5.43667 6.90205 6.062 6.90205Z"
+                                        fill="#AEB9E1" />
+                                </svg>
+                                <span class="dash-li-name">Users</span>
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10"
+                                fill="none">
+                                <path
+                                    d="M0.484 9.58887C0.372 9.58887 0.284 9.56087 0.22 9.50487C0.14 9.45687 0.08 9.38687 0.04 9.29487C0 9.20287 -0.01 9.10887 0.01 9.01287C0.03 8.91687 0.076 8.83687 0.148 8.77287L4.12 4.78887L0.148 0.804868C0.044 0.716867 -1.43051e-09 0.604868 0.016 0.468868C0.016 0.348867 0.06 0.236868 0.148 0.132868C0.244 0.0528679 0.36 0.00886822 0.496 0.000867844C0.632 -0.00713253 0.74 0.0368681 0.82 0.132868L5.14 4.45287C5.236 4.53287 5.284 4.64287 5.284 4.78287C5.284 4.92287 5.236 5.03687 5.14 5.12487L0.82 9.44487C0.74 9.54087 0.628 9.58887 0.484 9.58887Z"
+                                    fill="#AEB9E1" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="sidebar-li">
+                        <a href="">
+                            <span class="dash-li">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 10 14"
+                                    fill="none">
+                                    <path
+                                        d="M4.70363 0C4.96729 0 5.19094 0.0909996 5.37456 0.273C5.55819 0.455 5.65 0.672 5.65 0.924V1.4C6.09258 1.4 6.51398 1.484 6.91419 1.652C7.3144 1.82 7.66988 2.05333 7.98063 2.352C8.30079 2.688 8.53621 3.04267 8.68688 3.416C8.85638 3.808 8.94113 4.22333 8.94113 4.662C8.94113 4.92333 8.84931 5.145 8.66569 5.327C8.48206 5.509 8.26077 5.6 8.00181 5.6C7.74285 5.6 7.52156 5.509 7.33794 5.327C7.15431 5.145 7.0625 4.92333 7.0625 4.662C7.0625 4.48467 7.02719 4.30967 6.95656 4.137C6.88594 3.96433 6.78235 3.81033 6.64581 3.675C6.50927 3.53967 6.3539 3.437 6.17969 3.367C6.00548 3.297 5.82892 3.262 5.65 3.262H3.53125C3.15458 3.262 2.82029 3.39733 2.52838 3.668C2.39654 3.79867 2.29531 3.95033 2.22469 4.123C2.15406 4.29567 2.11875 4.47533 2.11875 4.662C2.11875 5.054 2.25765 5.38767 2.53544 5.663C2.81323 5.93833 3.14517 6.076 3.53125 6.076H6.11613C6.55871 6.076 6.9801 6.15767 7.38031 6.321C7.78052 6.48433 8.136 6.72 8.44675 7.028C8.7575 7.336 8.99527 7.68833 9.16006 8.085C9.32485 8.48167 9.40725 8.89933 9.40725 9.338C9.40725 9.77667 9.32485 10.1943 9.16006 10.591C8.99527 10.9877 8.7575 11.34 8.44675 11.648C8.136 11.956 7.78052 12.1917 7.38031 12.355C6.9801 12.5183 6.55871 12.6 6.11613 12.6H5.65V13.076C5.65 13.328 5.55819 13.545 5.37456 13.727C5.19094 13.909 4.96965 14 4.71069 14C4.45173 14 4.23044 13.909 4.04681 13.727C3.86319 13.545 3.77138 13.328 3.77138 13.076V12.6H3.29113C2.84854 12.6 2.42715 12.5183 2.02694 12.355C1.62673 12.1917 1.27125 11.956 0.9605 11.648C0.64975 11.34 0.411979 10.9877 0.247188 10.591C0.0823958 10.1943 0 9.77667 0 9.338C0 9.07667 0.0918125 8.855 0.275438 8.673C0.459063 8.491 0.680354 8.4 0.939313 8.4C1.19827 8.4 1.41956 8.491 1.60319 8.673C1.78681 8.855 1.87863 9.07667 1.87863 9.338C1.87863 9.52467 1.91394 9.70433 1.98456 9.877C2.05519 10.0497 2.15642 10.2013 2.28825 10.332C2.58017 10.6027 2.91446 10.738 3.29113 10.738H6.11613C6.49279 10.738 6.82708 10.6027 7.119 10.332C7.25083 10.2013 7.35206 10.0497 7.42269 9.877C7.49331 9.70433 7.52863 9.52467 7.52863 9.338C7.52863 8.946 7.39208 8.61467 7.119 8.344C6.84592 8.07333 6.51163 7.938 6.11613 7.938H3.53125C3.09808 7.938 2.67904 7.854 2.27413 7.686C1.86921 7.518 1.51138 7.28233 1.20063 6.979C0.889875 6.67567 0.64975 6.32333 0.48025 5.922C0.31075 5.52067 0.226 5.103 0.226 4.669C0.226 4.235 0.31075 3.81733 0.48025 3.416C0.64975 3.01467 0.889875 2.66233 1.20063 2.359C1.51138 2.05567 1.86921 1.82 2.27413 1.652C2.67904 1.484 3.09808 1.4 3.53125 1.4H3.77138V0.924C3.77138 0.672 3.86319 0.455 4.04681 0.273C4.23044 0.0909996 4.44938 0 4.70363 0Z"
+                                        fill="#AEB9E1" />
+                                </svg>
+                                <span class="dash-li-name">Orders</span>
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10"
+                                fill="none">
+                                <path
+                                    d="M0.484 9.58887C0.372 9.58887 0.284 9.56087 0.22 9.50487C0.14 9.45687 0.08 9.38687 0.04 9.29487C0 9.20287 -0.01 9.10887 0.01 9.01287C0.03 8.91687 0.076 8.83687 0.148 8.77287L4.12 4.78887L0.148 0.804868C0.044 0.716867 -1.43051e-09 0.604868 0.016 0.468868C0.016 0.348867 0.06 0.236868 0.148 0.132868C0.244 0.0528679 0.36 0.00886822 0.496 0.000867844C0.632 -0.00713253 0.74 0.0368681 0.82 0.132868L5.14 4.45287C5.236 4.53287 5.284 4.64287 5.284 4.78287C5.284 4.92287 5.236 5.03687 5.14 5.12487L0.82 9.44487C0.74 9.54087 0.628 9.58887 0.484 9.58887Z"
+                                    fill="#AEB9E1" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottomUser-box">
+                <a href="">
+                    <span class="bottom-span">
+                        <img src="./assets/imgs/1.png" alt="">
+                        <span class="bottom-user-name">
+                            <h6>John Carter</h6>
+                            <p>Account settings</p>
+                        </span>
+                    </span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="5" height="10" viewBox="0 0 5 10" fill="none">
+                        <path
+                            d="M0.484 9.58887C0.372 9.58887 0.284 9.56087 0.22 9.50487C0.14 9.45687 0.08 9.38687 0.04 9.29487C0 9.20287 -0.01 9.10887 0.01 9.01287C0.03 8.91687 0.076 8.83687 0.148 8.77287L4.12 4.78887L0.148 0.804868C0.044 0.716867 -1.43051e-09 0.604868 0.016 0.468868C0.016 0.348867 0.06 0.236868 0.148 0.132868C0.244 0.0528679 0.36 0.00886822 0.496 0.000867844C0.632 -0.00713253 0.74 0.0368681 0.82 0.132868L5.14 4.45287C5.236 4.53287 5.284 4.64287 5.284 4.78287C5.284 4.92287 5.236 5.03687 5.14 5.12487L0.82 9.44487C0.74 9.54087 0.628 9.58887 0.484 9.58887Z"
+                            fill="#AEB9E1" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <!-- sidebar end -->
+
+        <!-- Right Container start -->
+        <div class="right-content-section">
+            <div class="right-content-innerBox">
+                <h3>Welcome back, John</h3>
+                <p>Thank you for using ProxyHaze</p>
+
+                <div class="Overview-main-container">
+                    <div class="Overview-mainInner-container">
+
+                        <div class="Overview-mainInner-box">
+                            <div class="ComparisonStates-graph-container">
+                                <div class="flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15"
+                                        fill="none">
+                                        <path
+                                            d="M13 12.5955C13 12.7179 12.9514 12.8353 12.8648 12.9219C12.7783 13.0084 12.6609 13.0571 12.5385 13.0571H1.46154C1.33913 13.0571 1.22174 13.0084 1.13518 12.9219C1.04863 12.8353 1 12.7179 1 12.5955V3.36474C1 3.24233 1.04863 3.12493 1.13518 3.03838C1.22174 2.95182 1.33913 2.9032 1.46154 2.9032C1.58395 2.9032 1.70134 2.95182 1.7879 3.03838C1.87445 3.12493 1.92308 3.24233 1.92308 3.36474V9.63589L4.825 6.7282C4.9125 6.64153 5.03069 6.59291 5.15385 6.59291C5.27701 6.59291 5.39519 6.64153 5.48269 6.7282L7 8.25127L9.80962 5.44166L8.97885 4.61666C8.91623 4.54993 8.8738 4.46683 8.85644 4.37699C8.83908 4.28714 8.84752 4.19422 8.88077 4.10897C8.9167 4.02541 8.97623 3.95416 9.05207 3.90394C9.1279 3.85373 9.21674 3.82674 9.30769 3.82627H11.6154C11.7378 3.82627 11.8552 3.8749 11.9417 3.96146C12.0283 4.04801 12.0769 4.16541 12.0769 4.28781V6.59551C12.0772 6.68663 12.0505 6.77579 12.0002 6.85176C11.9499 6.92774 11.8782 6.98712 11.7942 7.02243C11.7373 7.04504 11.6766 7.05678 11.6154 7.05704C11.4928 7.05653 11.3751 7.00904 11.2865 6.92435L10.4615 6.09358L7.32885 9.23204C7.24134 9.31871 7.12316 9.36733 7 9.36733C6.87684 9.36733 6.75866 9.31871 6.67115 9.23204L5.15385 7.70897L1.92308 10.9397V12.134H12.5385C12.6609 12.134 12.7783 12.1826 12.8648 12.2692C12.9514 12.3557 13 12.4731 13 12.5955Z"
+                                            fill="#AEB9E1" />
+                                    </svg>
+                                    <h5 class="">Total profit</h5>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="flex justify-center items-center">
+                                        <h2>$144.6K</h2>
+                                        <span
+                                            class="w-auto flex justify-center items-center bgGreen borderGreen clrGreen text-xs font-medium mr-2 mt-6 ml-3 px-2.5 py-0.5 rounded-lg">
+                                            <span class="bgdarkGreen w-1 h-1 rounded-full mr-1"></span>
+                                            28.5%
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-1" width="10" height="10"
+                                                viewBox="0 0 10 10" fill="none">
+                                                <g clip-path="url(#clip0_37_954)">
+                                                    <path
+                                                        d="M0.745873 8.29099C0.661873 8.20099 0.619873 8.09299 0.619873 7.96699C0.619873 7.84099 0.661873 7.73599 0.745873 7.65199L6.74887 1.64899C6.83887 1.56499 6.94537 1.52299 7.06837 1.52299C7.19137 1.52299 7.29637 1.56649 7.38337 1.65349C7.47037 1.74049 7.51387 1.84549 7.51387 1.96849C7.51387 2.09149 7.47187 2.19799 7.38787 2.28799L1.38487 8.29099C1.30087 8.37499 1.19587 8.41699 1.06987 8.41699C0.943873 8.41699 0.835873 8.37499 0.745873 8.29099ZM7.06387 8.07499C6.94387 8.07499 6.83887 8.03149 6.74887 7.94449C6.65887 7.85749 6.61387 7.75099 6.61387 7.62499V2.42299H1.41187C1.28587 2.42299 1.17937 2.37799 1.09237 2.28799C1.00537 2.19799 0.961873 2.09149 0.961873 1.96849C0.961873 1.84549 1.00537 1.74049 1.09237 1.65349C1.17937 1.56649 1.28587 1.52299 1.41187 1.52299H7.06387C7.18987 1.52299 7.29637 1.56649 7.38337 1.65349C7.47037 1.74049 7.51387 1.84699 7.51387 1.97299V7.62499C7.51387 7.75099 7.47037 7.85749 7.38337 7.94449C7.29637 8.03149 7.18987 8.07499 7.06387 8.07499Z"
+                                                        fill="#14CA74" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_37_954">
+                                                        <rect width="9.02" height="9" fill="white"
+                                                            transform="matrix(1 0 0 -1 0.609863 9.46997)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </span>
+
+                                    </span>
+                                    <div class="relative flex max-w-sm rounded-lg bg5 mt-5 mr-5 w-36 mainLightBorder">
+                                        <div
+                                            class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none rounded-lg">
+                                            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                viewBox="0 0 20 20">
+                                                <path
+                                                    d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                            </svg>
+                                        </div>
+                                        <input datepicker type="text"
+                                            class="bg5 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                            placeholder="Select date">
+                                    </div>
+                                </div>
+                                <!-- <div class="ComparisonStates-graph-main-container"></div> -->
+                                <div id="columnchart_material" class="ComparisonStates-graph-main-container"
+                                    style="width: 100%; height: 500px;"></div>
+                            </div>
+                        </div>
+
+                        <div class="Overview-mainInner-box">
+                            <div class="top-main-container">
+                                <h5>Product categories</h5>
+                                <ul>
+                                    <li class="">
+                                        <div class="bullet-flex py-3">
+                                            <span class="bullet-top"></span>
+                                            <h6>Smartphones</h6>
+                                        </div>
+                                        <p class="mt-3">$153,143.00%</p>
+                                    </li>
+                                    <li class="">
+                                        <div class="bullet-flex py-3">
+                                            <span class="bullet-top"></span>
+                                            <h6>Tablets</h6>
+                                        </div>
+                                        <p class="mt-3">$15,399.34</p>
+                                    </li>
+                                    <li class="">
+                                        <div class="bullet-flex py-3">
+                                            <span class="bullet-top"></span>
+                                            <h6>Laptop users</h6>
+                                        </div>
+                                        <p class="mt-3">$27,965.00</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="relative mainLightBg rounded-xl mt-6 pt-2">
+                    <table class="w-full text-sm text-left text-white-500 dark:text-white">
+                        <thead class="text-xs text-white-700 uppercase">
+                            <tr class="mainLightBorder-bottom">
+                                <th scope="col" class="p-3 text-left text-white">
+                                    Invoice ID
+                                </th>
+                                <th scope="col" class="p-3 text-center flex items-center text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="11" height="10"
+                                        viewBox="0 0 11 10" fill="none">
+                                        <g clip-path="url(#clip0_37_442)">
+                                            <mask id="mask0_37_442" style="mask-type:luminance"
+                                                maskUnits="userSpaceOnUse" x="0" y="0" width="11" height="10">
+                                                <path d="M10.6899 0H0.689941V10H10.6899V0Z" fill="white" />
+                                            </mask>
+                                            <g mask="url(#mask0_37_442)">
+                                                <path
+                                                    d="M1.36389 8.74212C1.36389 7.21036 2.60563 5.96863 4.13738 5.96863H7.24244C8.77419 5.96863 10.0159 7.21036 10.0159 8.74212C10.0159 9.25271 9.60202 9.66662 9.09143 9.66662H2.28839C1.7778 9.66662 1.36389 9.25271 1.36389 8.74212Z"
+                                                    fill="#AEB9E1" />
+                                                <path
+                                                    d="M5.69153 5.26403C7.0531 5.26403 8.15686 4.16027 8.15686 2.7987C8.15686 1.43714 7.0531 0.333374 5.69153 0.333374C4.32997 0.333374 3.2262 1.43714 3.2262 2.7987C3.2262 4.16027 4.32997 5.26403 5.69153 5.26403Z"
+                                                    fill="#AEB9E1" />
+                                            </g>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_37_442">
+                                                <rect width="10" height="10" fill="white"
+                                                    transform="translate(0.689941)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    Product
+                                </th>
+                                <th scope="col" class="p-3 text-center text-white">
+                                    <span class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="13" height="12"
+                                            viewBox="0 0 13 12" fill="none">
+                                            <g clip-path="url(#clip0_37_453)">
+                                                <mask id="mask0_37_453" style="mask-type:luminance"
+                                                    maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="12">
+                                                    <path d="M12.22 0H0.219971V12H12.22V0Z" fill="white" />
+                                                </mask>
+                                                <g mask="url(#mask0_37_453)">
+                                                    <path
+                                                        d="M9.75462 1.87891H2.68506C2.13277 1.87891 1.68506 2.32662 1.68506 2.87891V10C1.68506 10.5523 2.13277 11 2.68506 11H9.75462C10.3069 11 10.7546 10.5523 10.7546 10V2.87891C10.7546 2.32662 10.3069 1.87891 9.75462 1.87891Z"
+                                                        stroke="#AEB9E1" />
+                                                    <path
+                                                        d="M1.68506 4.92712H10.7547V9.99925C10.7547 10.5515 10.3069 10.9992 9.75462 10.9992H2.68506C2.13277 10.9992 1.68506 10.5515 1.68506 9.99925V4.92712Z"
+                                                        fill="#AEB9E1" stroke="#AEB9E1" />
+                                                    <path d="M8.73584 1V2.65369" stroke="#AEB9E1" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M3.7749 1V2.65369" stroke="#AEB9E1" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </g>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_37_453">
+                                                    <rect width="12" height="12" fill="white"
+                                                        transform="translate(0.219971)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        Date
+                                    </span>
+                                </th>
+                                <th scope="col" class="p-3 text-center text-white">
+                                    <span class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="11" height="10"
+                                            viewBox="0 0 11 10" fill="none">
+                                            <g clip-path="url(#clip0_37_466)">
+                                                <mask id="mask0_37_466" style="mask-type:luminance"
+                                                    maskUnits="userSpaceOnUse" x="0" y="0" width="11" height="10">
+                                                    <path d="M10.8401 0H0.840088V10H10.8401V0Z" fill="white" />
+                                                </mask>
+                                                <g mask="url(#mask0_37_466)">
+                                                    <path
+                                                        d="M10.0068 0H1.67342C1.45241 0 1.24045 0.0877973 1.08417 0.244078C0.927885 0.400358 0.840088 0.61232 0.840088 0.833333V9.16667C0.840088 9.38768 0.927885 9.59964 1.08417 9.75592C1.24045 9.9122 1.45241 10 1.67342 10H10.0068C10.2278 10 10.4397 9.9122 10.596 9.75592C10.7523 9.59964 10.8401 9.38768 10.8401 9.16667V0.833333C10.8401 0.61232 10.7523 0.400358 10.596 0.244078C10.4397 0.0877973 10.2278 0 10.0068 0ZM8.41821 4.05208L5.36613 6.96875C5.28723 7.04298 5.18279 7.084 5.07447 7.08333C4.96773 7.08374 4.86502 7.04265 4.78801 6.96875L3.26196 5.51042C3.21964 5.47349 3.18522 5.42838 3.16076 5.37781C3.13631 5.32724 3.12234 5.27225 3.11969 5.21614C3.11703 5.16003 3.12575 5.10396 3.14532 5.05131C3.16488 4.99866 3.19489 4.9505 3.23355 4.90974C3.2722 4.86898 3.31869 4.83646 3.37023 4.81413C3.42177 4.79179 3.4773 4.78011 3.53347 4.77979C3.58964 4.77946 3.6453 4.7905 3.69709 4.81223C3.74889 4.83396 3.79576 4.86594 3.83488 4.90625L5.07447 6.08854L7.8453 3.44792C7.92631 3.37723 8.03152 3.3406 8.13891 3.34568C8.24631 3.35077 8.34758 3.39716 8.42157 3.47518C8.49555 3.5532 8.53651 3.65679 8.53588 3.76431C8.53526 3.87182 8.4931 3.97493 8.41821 4.05208Z"
+                                                        fill="#AEB9E1" />
+                                                </g>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_37_466">
+                                                    <rect width="10" height="10" fill="white"
+                                                        transform="translate(0.840088)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        Status
+                                    </span>
+
+                                </th>
+                                <th scope="col" class="p-3 text-center text-white">
+                                    <span class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="11" height="10"
+                                            viewBox="0 0 11 10" fill="none">
+                                            <g clip-path="url(#clip0_37_476)">
+                                                <mask id="mask0_37_476" style="mask-type:luminance"
+                                                    maskUnits="userSpaceOnUse" x="0" y="0" width="11" height="10">
+                                                    <path d="M10.45 0H0.449951V10H10.45V0Z" fill="white" />
+                                                </mask>
+                                                <g mask="url(#mask0_37_476)">
+                                                    <path
+                                                        d="M5.45045 0C4.40885 0.00118162 3.41025 0.415479 2.67373 1.152C1.93721 1.88852 1.52291 2.88712 1.52173 3.92872C1.52173 7.29046 5.09329 9.83074 5.24509 9.93789C5.30592 9.97839 5.37737 10 5.45045 10C5.52353 10 5.59498 9.97839 5.65582 9.93789C5.80761 9.83074 9.37917 7.29046 9.37917 3.92872C9.37799 2.88712 8.9637 1.88852 8.22717 1.152C7.49065 0.415479 6.49205 0.00118162 5.45045 0ZM5.45045 2.5001C5.73301 2.5001 6.00922 2.58388 6.24415 2.74086C6.47909 2.89784 6.6622 3.12096 6.77033 3.38201C6.87846 3.64306 6.90675 3.93031 6.85163 4.20744C6.7965 4.48456 6.66044 4.73912 6.46064 4.93892C6.26085 5.13871 6.00629 5.27478 5.72916 5.3299C5.45204 5.38502 5.16479 5.35673 4.90374 5.2486C4.64269 5.14047 4.41957 4.95736 4.26259 4.72243C4.10561 4.48749 4.02182 4.21128 4.02182 3.92872C4.02182 3.54983 4.17234 3.18645 4.44026 2.91853C4.70818 2.65061 5.07156 2.5001 5.45045 2.5001Z"
+                                                        fill="#AEB9E1" />
+                                                </g>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_37_476">
+                                                    <rect width="10" height="10" fill="white"
+                                                        transform="translate(0.449951)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        Country
+                                    </span>
+
+                                </th>
+                                <th scope="col" class="p-3 text-right text-white">
+                                    Total
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr class="mainLightBorder-bottom gray-b text-white font-light">
+                                <td class="px-3 py-4 text-left ">
+                                    #1532
+                                </td>
+                                <th scope="row" class="px-3 py-4 block font-medium text-white dark:text-white">
+                                    Residental Proxies
+                                    <br>
+                                    <span class="minHeadClr">2GB</span>
+                                </th>
+                                <td class="px-3 py-4 text-left text-white font-light">
+                                    Jan 30, 2024
+                                </td>
+                                <td class="w-5 h-2 px-3 py-4 text-white font-light pillFinished">
+                                    <span
+                                        class="w-auto flex justify-center items-center bgGreen borderGreen clrGreen text-xs font-medium mr-2 px-2.5 py-0.5 rounded-lg">
+                                        <span class="bgdarkGreen w-1 h-1 rounded-full mr-1"></span>
+                                        Finished</span>
+                                </td>
+                                <td class="px-3 py-4 text-left text-white font-light">
+                                    United States
+                                </td>
+
+                                <td class="px-3 py-4 text-right text-white font-light">
+                                    $ 1,099.24
+                                </td>
+                            </tr>
+                            <tr class="mainLightBorder-bottom gray-b text-white font-light">
+                                <td class="px-3 py-4 text-left ">
+                                    #1532
+                                </td>
+                                <th scope="row" class="px-3 py-4 block font-medium text-white dark:text-white">
+                                    Residental Proxies
+                                    <br>
+                                    <span class="minHeadClr">2GB</span>
+                                </th>
+                                <td class="px-3 py-4 text-left text-white font-light">
+                                    Jan 30, 2024
+                                </td>
+                                <td class="w-5 h-2 px-3 py-4 text-white font-light pillFinished">
+                                    <span
+                                        class="w-auto flex justify-center items-center bgred borderred clrred text-xs font-medium mr-2 px-2.5 py-0.5 rounded-lg">
+                                        <span class="bgdarkred w-1 h-1 rounded-full mr-1"></span>
+                                        Canceled</span>
+                                </td>
+                                <td class="px-3 py-4 text-left text-white font-light">
+                                    United States
+                                </td>
+
+                                <td class="px-3 py-4 text-right text-white font-light">
+                                    $ 1,099.24
+                                </td>
+                            </tr>
+                            <tr class="mainLightBorder-bottom gray-b text-white font-light">
+                                <td class="px-3 py-4 text-left ">
+                                    #1532
+                                </td>
+                                <th scope="row" class="px-3 py-4 block font-medium text-white dark:text-white">
+                                    Residental Proxies
+                                    <br>
+                                    <span class="minHeadClr">2GB</span>
+                                </th>
+                                <td class="px-3 py-4 text-left text-white font-light">
+                                    Jan 30, 2024
+                                </td>
+                                <td class="w-5 h-2 px-3 py-4 text-white font-light pillFinished">
+                                    <span
+                                        class="w-auto flex justify-center items-center bgGreen borderGreen clrGreen text-xs font-medium mr-2 px-2.5 py-0.5 rounded-lg">
+                                        <span class="bgdarkGreen w-1 h-1 rounded-full mr-1"></span>
+                                        Finished</span>
+                                </td>
+                                <td class="px-3 py-4 text-left text-white font-light">
+                                    United States
+                                </td>
+
+                                <td class="px-3 py-4 text-right text-white font-light">
+                                    $ 1,099.24
+                                </td>
+                            </tr>
+                            <tr class="mainLightBorder-bottom gray-b text-white font-light">
+                                <td class="px-3 py-4 text-left ">
+                                    #1532
+                                </td>
+                                <th scope="row" class="px-3 py-4 block font-medium text-white dark:text-white">
+                                    Residental Proxies
+                                    <br>
+                                    <span class="minHeadClr">2GB</span>
+                                </th>
+                                <td class="px-3 py-4 text-left text-white font-light">
+                                    Jan 30, 2024
+                                </td>
+                                <td class="w-5 h-2 px-3 py-4 text-white font-light pillFinished">
+                                    <span
+                                        class="w-auto flex justify-center items-center bgyellow borderyellow clryellow text-xs font-medium mr-2 px-2.5 py-0.5 rounded-lg">
+                                        <span class="bgdarkyellow w-1 h-1 rounded-full mr-1"></span>
+                                        Finished</span>
+                                </td>
+                                <td class="px-3 py-4 text-left text-white font-light">
+                                    United States
+                                </td>
+
+                                <td class="px-3 py-4 text-right text-white font-light">
+                                    $ 1,099.24
+                                </td>
+                            </tr>
+                            <tr class="mainLightBorder-bottom gray-b text-white font-light">
+                                <td class="px-3 py-4 text-left ">
+                                    #1532
+                                </td>
+                                <th scope="row" class="px-3 py-4 block font-medium text-white dark:text-white">
+                                    Residental Proxies
+                                    <br>
+                                    <span class="minHeadClr">2GB</span>
+                                </th>
+                                <td class="px-3 py-4 text-left text-white font-light">
+                                    Jan 30, 2024
+                                </td>
+                                <td class="w-5 h-2 px-3 py-4 text-white font-light pillFinished">
+                                    <span
+                                        class="w-auto flex justify-center items-center bgred borderred clrred text-xs font-medium mr-2 px-2.5 py-0.5 rounded-lg">
+                                        <span class="bgdarkred w-1 h-1 rounded-full mr-1"></span>
+                                        Canceled</span>
+                                </td>
+                                <td class="px-3 py-4 text-left text-white font-light">
+                                    United States
+                                </td>
+
+                                <td class="px-3 py-4 text-right text-white font-light">
+                                    $ 1,099.24
+                                </td>
+                            </tr>
+                            <tr class="gray-b text-white font-light">
+                                <td class="px-3 py-4 text-left ">
+                                    #1532
+                                </td>
+                                <th scope="row" class="px-3 py-4 block font-medium text-white dark:text-white">
+                                    Residental Proxies
+                                    <br>
+                                    <span class="minHeadClr">2GB</span>
+                                </th>
+                                <td class="px-3 py-4 text-left text-white font-light">
+                                    Jan 30, 2024
+                                </td>
+                                <td class="w-5 h-2 px-3 py-4 text-white font-light pillFinished">
+                                    <span
+                                        class="w-auto flex justify-center items-center bgGreen borderGreen clrGreen text-xs font-medium mr-2 px-2.5 py-0.5 rounded-lg">
+                                        <span class="bgdarkGreen w-1 h-1 rounded-full mr-1"></span>
+                                        Finished</span>
+                                </td>
+                                <td class="px-3 py-4 text-left text-white font-light">
+                                    United States
+                                </td>
+
+                                <td class="px-3 py-4 text-right text-white font-light">
+                                    $ 1,099.24
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <!-- Right Container End -->
+
+    </div>
+    <!-- Web-container -->
+
+
+    <!-- scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/datepicker.min.js"></script>
+
+    <script src="./vendor/js/app.js"></script>
+</body>
+
+</html>

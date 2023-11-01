@@ -98,7 +98,8 @@ input:focus {
 .bg3 {
     background-color: #6C72FF;
 }
-.bg5{
+
+.bg5 {
     background-color: #212C4D;
 }
 
@@ -106,7 +107,7 @@ input:focus {
     color: #37446B;
 }
 
-.bg6{
+.bg6 {
     background-color: #37446B;
 }
 
@@ -115,6 +116,7 @@ input:focus {
 .mainLightBorder-bottom {
     border-bottom: 1px solid #37446B;
 }
+
 .mainLightBorder-right {
     border-right: 1px solid #37446B;
 }
@@ -562,8 +564,7 @@ body {
 
 .thead {}
 
-.thead tr {
-}
+.thead tr {}
 
 .thead tr th {
     color: #FFF;
@@ -750,6 +751,7 @@ body {
 .adminNav-pill-bg {
     border: 1px solid #343B4F;
 }
+
 /* 
 .dot-icon {
     background-color: red;
@@ -770,8 +772,10 @@ body {
 
 .inner-dot {
     position: absolute;
-    width: 10px; /* Adjust the size */
-    height: 10px; /* Adjust the size */
+    width: 10px;
+    /* Adjust the size */
+    height: 10px;
+    /* Adjust the size */
     border-radius: 50%;
     z-index: 3;
 
@@ -779,8 +783,10 @@ body {
 
 .middle-dot {
     position: absolute;
-    width: 20px; /* Adjust the size */
-    height: 20px; /* Adjust the size */
+    width: 20px;
+    /* Adjust the size */
+    height: 20px;
+    /* Adjust the size */
     border-radius: 50%;
     z-index: 2;
     opacity: 0.8;
@@ -788,10 +794,67 @@ body {
 
 .outer-dot {
     position: absolute;
-    width: 30px; /* Adjust the size */
-    height: 30px; /* Adjust the size */
+    width: 30px;
+    /* Adjust the size */
+    height: 30px;
+    /* Adjust the size */
     border-radius: 50%;
     z-index: 1;
     opacity: 0.5;
 
+}
+
+
+.progress {
+    position: relative;
+    padding-right: -100px;
+    text-align: center;
+}
+
+.progress span {
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 12px;
+}
+
+.barOverflow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 45px;
+    height: 70px;
+    margin-bottom: -14px;
+}
+
+.bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 5px solid #d4d3d3;
+    border-bottom-color: #101935;
+    border-right-color: #101935;
+}
+
+
+.popup-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leaflet-tile {
+    filter: hue-rotate(0deg) invert(100%);
+}
+.leaflet-popup-content-wrapper {
+    background-color: #37446B;
+    color: white;
+    border: 1px solid #6C72FF;
+}
+.leaflet-popup-tip-container {
+    background: transparent:
 }

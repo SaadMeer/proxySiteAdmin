@@ -152,13 +152,41 @@ dotCoordinates.forEach(function (coord) {
     // Create a popup with a red progress bar
     var popupContent = `
         <div class="popup-content">
-            <p>This is a dot</p>
-            <div class="progress-bar">
-                <div class="progress" style="width: ${progressValue}%; background-color: red;"></div>
-            </div>
+        <div class="progress">
+        <div class="barOverflow">
+          <div class="bar"></div>
+        </div>
+        <span>34</span>%
+      </div>
         </div>
     `;
 
     // Add a popup to the marker
     marker.bindPopup(popupContent).openPopup();
+    
 });
+
+
+var progressBars = document.querySelectorAll(".progress");
+
+for (var i = 0; i < progressBars.length; i++) {
+    var progressBar = progressBars[i];
+    var bar = progressBar.querySelector(".bar");
+    var val = progressBar.querySelector("span");
+    var perc = parseInt(val.textContent, 10);
+
+    var animation = {
+        p: 0
+    };
+
+    animation.animate({
+        p: perc
+    }, {
+        duration: 3000,
+        easing: "swing",
+        step: function(p) {
+            bar.style.transform = "rotate(" + (45 + (p * 1.8)) + "deg)";
+            val.textContent = Math.round(p);
+        }
+    });
+}

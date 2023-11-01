@@ -80,6 +80,40 @@
 //     }).addTo(map);
 // });
 
+// var map = L.map('map').setView([51.505, -0.09], 13);
+
+// L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+//     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+// }).addTo(map);
+
+// // Function to create concentric dots
+// function createConcentricDots(innerColor, middleColor, outerColor, radius) {
+//     var icon = L.divIcon({
+//         className: 'concentric-dots-icon',
+//         html: `<div class="inner-dot" style="background-color: ${innerColor};"></div>
+//                <div class="middle-dot" style="background-color: ${middleColor};"></div>
+//                <div class="outer-dot" style="background-color: ${outerColor};"></div>`,
+//         iconSize: [2 * radius, 2 * radius],
+//         iconAnchor: [radius, radius]
+//     });
+//     return icon;
+// }
+
+// // Define the coordinates for your concentric dots
+// var dotCoordinates = [
+//     [51.5, -0.09],
+//     [51.51, -0.08],
+//     [51.52, -0.1]
+// ];
+
+// dotCoordinates.forEach(function (coord) {
+//     var marker = L.marker(coord, {
+//         icon: createConcentricDots('#9a91fb', '#40479f', '#232a5e', 10)
+//     }).addTo(map);
+
+//     // Add a popup to each marker
+//     marker.bindPopup('This is a dot').openPopup();
+// });
 
 var map = L.map('map').setView([51.505, -0.09], 13);
 
@@ -101,16 +135,30 @@ function createConcentricDots(innerColor, middleColor, outerColor, radius) {
 }
 
 // Define the coordinates for your concentric dots
-var concentricDotCoordinates = [
+var dotCoordinates = [
     [51.5, -0.09],
     [51.51, -0.08],
     [51.52, -0.1]
-    // Add more coordinates as needed
 ];
 
-// Create markers with concentric dots at each coordinate
-concentricDotCoordinates.forEach(function (coord) {
+dotCoordinates.forEach(function (coord) {
     var marker = L.marker(coord, {
         icon: createConcentricDots('#9a91fb', '#40479f', '#232a5e', 10)
     }).addTo(map);
+
+    // Define the progress value (between 0 and 100)
+    var progressValue = 20; // Set the progress value to 20% (0 to 100)
+
+    // Create a popup with a red progress bar
+    var popupContent = `
+        <div class="popup-content">
+            <p>This is a dot</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: ${progressValue}%; background-color: red;"></div>
+            </div>
+        </div>
+    `;
+
+    // Add a popup to the marker
+    marker.bindPopup(popupContent).openPopup();
 });

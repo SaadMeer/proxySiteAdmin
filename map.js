@@ -156,7 +156,8 @@ dotCoordinates.forEach(function (coord) {
         <div class="barOverflow">
           <div class="bar"></div>
         </div>
-        <span>34</span>%
+        <span class="spanCountry">Austalia</span>
+        <span class="spanPerc">34%</span>
       </div>
         </div>
     `;

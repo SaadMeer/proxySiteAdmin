@@ -73,6 +73,7 @@ input:focus {
 
 .minHeadClr {
     color: #AEB9E1;
+    
 }
 
 .lightClr {
@@ -807,14 +808,16 @@ body {
 
 .progress {
     position: relative;
-    padding-right: -100px;
+    /* padding-right: -100px; */
     text-align: center;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .progress span {
     font-weight: 700;
     font-size: 20px;
-    margin-left: 12px;
 }
 
 .barOverflow {
@@ -822,7 +825,6 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 45px;
     height: 70px;
     margin-bottom: -14px;
 }
@@ -831,13 +833,22 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     box-sizing: border-box;
     border: 5px solid #d4d3d3;
     border-bottom-color: #101935;
     border-right-color: #101935;
+}
+.spanCountry{
+    color: #81888F;   
+    margin-top: 5px; 
+    font-size: 15px !important;
+}
+.spanPerc{
+    font-size: 20px !important;
+    font-family: 'Manrope', sans-serif;
 }
 
 
@@ -850,11 +861,14 @@ body {
 .leaflet-tile {
     filter: hue-rotate(0deg) invert(100%);
 }
+
 .leaflet-popup-content-wrapper {
-    background-color: #37446B;
     color: white;
-    border: 1px solid #6C72FF;
+    padding: 10px 8px;
+    background-color: #37446B;
+    border: 2px solid #595efc;
 }
+
 .leaflet-popup-tip-container {
-    background: transparent:
+    background: transparent;
 }

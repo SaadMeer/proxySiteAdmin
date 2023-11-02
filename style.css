@@ -805,6 +805,9 @@ body {
 
 }
 
+#map{
+    background-color: #080f25;
+}
 
 .progress {
     position: relative;
@@ -837,16 +840,19 @@ body {
     height: 60px;
     border-radius: 50%;
     box-sizing: border-box;
-    border: 5px solid #d4d3d3;
+    border: 8px solid #d4d3d3;
     border-bottom-color: #101935;
     border-right-color: #101935;
 }
 .spanCountry{
-    color: #81888F;   
-    margin-top: 5px; 
+    color: #bec6ce !important;    
+    font-weight: 300 !important;
+    margin-top: 8px; 
+    margin-left: 2px;
     font-size: 15px !important;
 }
 .spanPerc{
+    margin-left: 3px;
     font-size: 20px !important;
     font-family: 'Manrope', sans-serif;
 }
@@ -865,6 +871,7 @@ body {
 .leaflet-popup-content-wrapper {
     color: white;
     padding: 10px 8px;
+    border-radius: 8px !important;
     background-color: #37446B;
     border: 2px solid #595efc;
 }

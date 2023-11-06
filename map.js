@@ -161,10 +161,8 @@ dotCoordinates.forEach(function (coord) {
       </div>
         </div>
     `;
-
     // Add a popup to the marker
     marker.bindPopup(popupContent).openPopup();
-    
 });
 
 
@@ -185,7 +183,7 @@ for (var i = 0; i < progressBars.length; i++) {
     }, {
         duration: 3000,
         easing: "swing",
-        step: function(p) {
+        step: function (p) {
             bar.style.transform = "rotate(" + (45 + (p * 1.8)) + "deg)";
             val.textContent = Math.round(p);
         }

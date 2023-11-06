@@ -73,7 +73,7 @@ input:focus {
 
 .minHeadClr {
     color: #AEB9E1;
-    
+
 }
 
 .lightClr {
@@ -113,6 +113,9 @@ input:focus {
 }
 
 
+.logout-btn {
+    padding: 5px;
+}
 
 .mainLightBorder-bottom {
     border-bottom: 1px solid #37446B;
@@ -342,7 +345,6 @@ body {
 }
 
 .bottomUser-box a {
-    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -469,10 +471,69 @@ body {
     align-items: center;
 }
 
+
+#containercircle {
+    margin: 20px;
+    width: 200px;
+    height: 100px;
+  }
+
+.progress-1 {
+    position: relative;
+    margin: 4px;
+    float: left;
+    text-align: center;
+    color: #FFF;
+    font-size: 36px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+.barOverflow-1 {
+    /* Wraps the rotating .bar */
+    position: relative;
+    overflow: hidden;
+    /* Comment this line to understand the trick */
+    width: 250px;
+    height: 105px;
+    /* Half circle (overflow) */
+    margin-bottom: -44px;
+    /* bring the numbers up */
+}
+
+.bar-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 250px;
+    /* full circle! */
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 15px solid #6C72FF;
+    /* half gray, */
+    border-bottom-color: #37446B;
+    /* half azure */
+    border-right-color: #37446B;
+}
+.progress-1 span {
+    color: #FFF;
+    font-size: 36px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+}
+.progress-1 p{
+    padding-top: 10px;
+}
+
+
 .Overview-dataUsed-container svg {}
 
 .Overview-dataUsed-container span {
-    margin-top: -65px;
     position: relative;
 }
 
@@ -494,6 +555,8 @@ body {
     line-height: 16px;
     padding-top: 12px;
 }
+
+
 
 .top-main-container {
     padding-top: 30px;
@@ -805,7 +868,7 @@ body {
 
 }
 
-#map{
+#map {
     background-color: #080f25;
 }
 
@@ -844,14 +907,16 @@ body {
     border-bottom-color: #101935;
     border-right-color: #101935;
 }
-.spanCountry{
-    color: #bec6ce !important;    
+
+.spanCountry {
+    color: #bec6ce !important;
     font-weight: 300 !important;
-    margin-top: 8px; 
+    margin-top: 8px;
     margin-left: 2px;
     font-size: 15px !important;
 }
-.spanPerc{
+
+.spanPerc {
     margin-left: 3px;
     font-size: 20px !important;
     font-family: 'Manrope', sans-serif;

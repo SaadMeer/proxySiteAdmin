@@ -10,7 +10,7 @@ $(".progress-1").each(function(){
     easing: "swing",
     step: function(p) {
       $bar.css({
-        transform: "rotate("+ (90+(p*1.8)) +"deg)", // 100%=180° so: ° = % * 1.8
+        transform: "rotate("+ (50+(p*1.8)) +"deg)", // 100%=180° so: ° = % * 1.8
         // 45 is to add the needed rotation to have the green borders at the bottom
       });
       $val.text(p|0);

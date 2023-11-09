@@ -512,11 +512,11 @@ body {
     /* full circle! */
     border-radius: 50%;
     box-sizing: border-box;
-    border: 15px solid #6C72FF;
+    border: 15px solid #37446B;
     /* half gray, */
-    border-bottom-color: #37446B;
+    border-bottom-color: #6C72FF;
     /* half azure */
-    border-right-color: #37446B;
+    border-right-color: #6C72FF;
 }
 .progress-1 span {
     color: #FFF;
@@ -529,7 +529,13 @@ body {
 .progress-1 p{
     padding-top: 10px;
 }
+.bg7 {
+    background-color: #9A91FB !important;
+}
 
+.bg8 {
+    background-color: #57C3FF !important;
+}
 
 .Overview-dataUsed-container svg {}
 
@@ -943,4 +949,45 @@ body {
 
 .leaflet-popup-tip-container {
     background: transparent;
+}
+
+
+
+.tbodyScroll {
+    max-height: 350px;
+    overflow: auto;
+    display: block;
+}
+.rightContentProductAdminScroll{
+    max-height: 70vh;
+    overflow: auto;
+    display: block;
+}
+
+.tbodyScroll::-webkit-scrollbar {
+    width: 3px;
+    border-radius: 30%;
+}
+
+.tbodyScroll::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.tbodyScroll::-webkit-scrollbar-thumb {
+    background: #37446B;
+    height: 100px;
+}
+
+.rightContentProductAdminScroll::-webkit-scrollbar {
+    width: 3px;
+    border-radius: 30%;
+}
+
+.rightContentProductAdminScroll::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.rightContentProductAdminScroll::-webkit-scrollbar-thumb {
+    background: #37446B;
+    height: 100px;
 }

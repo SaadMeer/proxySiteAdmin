@@ -1133,6 +1133,9 @@ body {
 .mobsvg-toggle {
     display: none;
 }
+.mainLightBg1 {
+    background-color: #080f25;
+}
 
 @media only screen and (max-width: 576px) {
     .mobsvg-toggle {

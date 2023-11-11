@@ -13,7 +13,7 @@
     <!-- flowbite -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style.css">
-    <title>Proxy User</title>
+    <title>Proxy Admin</title>
     <link rel="icon" href="/assets/logo.png" type="image/x-icon">
 </head>
 
@@ -27,12 +27,13 @@
             <div class="logo-section">
                 <div class="logo-container">
                     <a href="index.html">
-                        <img src="./assets/logo.png" alt="">
-                        <h3>ProxyHaze</h3>
+                        <img class="main-logo" src="./assets/logo.png" alt="">
+                        <h3 class="logoname">ProxyHaze</h3>
                     </a>
                 </div>
                 <div class="toggle-box-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="13" viewBox="0 0 22 13" fill="none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="deskyop-arrow" width="22" height="13"
+                        viewBox="0 0 22 13" fill="none">
                         <mask id="mask0_37_823" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
                             width="23" height="13">
                             <path d="M22.0004 0.830017H0V12.83H22.0004V0.830017Z" fill="white" />
@@ -48,14 +49,15 @@
                             </g>
                         </g>
                     </svg>
+                    <img src="./assets/imgs/Open Sidebar.png" class="mobsvg-toggle" onclick="toggleSidebar()" alt="">
                 </div>
             </div>
 
             <div class="sidebar-menu-section">
                 <ul class="sidebar-ul">
-                    <li class="sidebar-li active">
-                        <a href="">
-                            <span class="dash-li">
+                    <li class="sidebar-li dash-li-1 active">
+                        <a href="index.html">
+                            <span class="dash-li ">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 14 14"
                                     fill="none">
                                     <path
@@ -64,16 +66,16 @@
                                 </svg>
                                 <span class="dash-li-name">Dashboard</span>
                             </span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10"
-                                fill="none">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="leftarrow-menu" width="6" height="10"
+                                viewBox="0 0 6 10" fill="none">
                                 <path
                                     d="M0.484 9.58887C0.372 9.58887 0.284 9.56087 0.22 9.50487C0.14 9.45687 0.08 9.38687 0.04 9.29487C0 9.20287 -0.01 9.10887 0.01 9.01287C0.03 8.91687 0.076 8.83687 0.148 8.77287L4.12 4.78887L0.148 0.804868C0.044 0.716867 -1.43051e-09 0.604868 0.016 0.468868C0.016 0.348867 0.06 0.236868 0.148 0.132868C0.244 0.0528679 0.36 0.00886822 0.496 0.000867844C0.632 -0.00713253 0.74 0.0368681 0.82 0.132868L5.14 4.45287C5.236 4.53287 5.284 4.64287 5.284 4.78287C5.284 4.92287 5.236 5.03687 5.14 5.12487L0.82 9.44487C0.74 9.54087 0.628 9.58887 0.484 9.58887Z"
                                     fill="#AEB9E1" />
                             </svg>
                         </a>
                     </li>
-                    <li class="sidebar-li">
-                        <a href="">
+                    <li class="sidebar-li dash-li-2">
+                        <a href="pricing.html">
                             <span class="dash-li">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 14 14"
                                     fill="none">
@@ -83,16 +85,16 @@
                                 </svg>
                                 <span class="dash-li-name">Products</span>
                             </span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10"
-                                fill="none">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="leftarrow-menu" width="6" height="10"
+                                viewBox="0 0 6 10" fill="none">
                                 <path
                                     d="M0.484 9.58887C0.372 9.58887 0.284 9.56087 0.22 9.50487C0.14 9.45687 0.08 9.38687 0.04 9.29487C0 9.20287 -0.01 9.10887 0.01 9.01287C0.03 8.91687 0.076 8.83687 0.148 8.77287L4.12 4.78887L0.148 0.804868C0.044 0.716867 -1.43051e-09 0.604868 0.016 0.468868C0.016 0.348867 0.06 0.236868 0.148 0.132868C0.244 0.0528679 0.36 0.00886822 0.496 0.000867844C0.632 -0.00713253 0.74 0.0368681 0.82 0.132868L5.14 4.45287C5.236 4.53287 5.284 4.64287 5.284 4.78287C5.284 4.92287 5.236 5.03687 5.14 5.12487L0.82 9.44487C0.74 9.54087 0.628 9.58887 0.484 9.58887Z"
                                     fill="#AEB9E1" />
                             </svg>
                         </a>
                     </li>
-                    <li class="sidebar-li">
-                        <a href="">
+                    <li class="sidebar-li dash-li-3">
+                        <a href="generator.html">
                             <span class="dash-li">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 13 13"
                                     fill="none">
@@ -102,16 +104,16 @@
                                 </svg>
                                 <span class="dash-li-name">Users</span>
                             </span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10"
-                                fill="none">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="leftarrow-menu" width="6" height="10"
+                                viewBox="0 0 6 10" fill="none">
                                 <path
                                     d="M0.484 9.58887C0.372 9.58887 0.284 9.56087 0.22 9.50487C0.14 9.45687 0.08 9.38687 0.04 9.29487C0 9.20287 -0.01 9.10887 0.01 9.01287C0.03 8.91687 0.076 8.83687 0.148 8.77287L4.12 4.78887L0.148 0.804868C0.044 0.716867 -1.43051e-09 0.604868 0.016 0.468868C0.016 0.348867 0.06 0.236868 0.148 0.132868C0.244 0.0528679 0.36 0.00886822 0.496 0.000867844C0.632 -0.00713253 0.74 0.0368681 0.82 0.132868L5.14 4.45287C5.236 4.53287 5.284 4.64287 5.284 4.78287C5.284 4.92287 5.236 5.03687 5.14 5.12487L0.82 9.44487C0.74 9.54087 0.628 9.58887 0.484 9.58887Z"
                                     fill="#AEB9E1" />
                             </svg>
                         </a>
                     </li>
-                    <li class="sidebar-li">
-                        <a href="">
+                    <li class="sidebar-li dash-li-4">
+                        <a href="wallet.html">
                             <span class="dash-li">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 10 14"
                                     fill="none">
@@ -121,8 +123,8 @@
                                 </svg>
                                 <span class="dash-li-name">Orders</span>
                             </span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10"
-                                fill="none">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="leftarrow-menu" width="6" height="10"
+                                viewBox="0 0 6 10" fill="none">
                                 <path
                                     d="M0.484 9.58887C0.372 9.58887 0.284 9.56087 0.22 9.50487C0.14 9.45687 0.08 9.38687 0.04 9.29487C0 9.20287 -0.01 9.10887 0.01 9.01287C0.03 8.91687 0.076 8.83687 0.148 8.77287L4.12 4.78887L0.148 0.804868C0.044 0.716867 -1.43051e-09 0.604868 0.016 0.468868C0.016 0.348867 0.06 0.236868 0.148 0.132868C0.244 0.0528679 0.36 0.00886822 0.496 0.000867844C0.632 -0.00713253 0.74 0.0368681 0.82 0.132868L5.14 4.45287C5.236 4.53287 5.284 4.64287 5.284 4.78287C5.284 4.92287 5.236 5.03687 5.14 5.12487L0.82 9.44487C0.74 9.54087 0.628 9.58887 0.484 9.58887Z"
                                     fill="#AEB9E1" />
@@ -687,7 +689,8 @@
 
     <!-- scripts -->
 
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="map.js"></script>
 

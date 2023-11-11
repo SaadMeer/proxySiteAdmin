@@ -224,7 +224,7 @@ body {
 .hide-sidebar {
     width: 86px;
     transition: 0.3s ease-in-out;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .logo-section {
@@ -266,11 +266,121 @@ body {
 
 .toggle-box-container-show {
     position: absolute;
-    background-color: var(--white);
     transform: rotate(180deg);
     transition: var(--transition-half-s);
-    left: 80px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    left: 60px;
+}
+
+.dash-li-name-show-1::after {
+    content: "Dashboard";
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 60px;
+    font-size: 12px !important;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: #101935;
+    padding: 5px 15px;
+    border: 1px solid #37446B;
+    border-radius: 10px;
+    z-index: 999;
+    color: #939ca5;
+    overflow: visible;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.dash-li-name-show-1:hover::after {
+    display: block;
+    z-index: 999;
+    color: #939ca5;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+
+.dash-li-name-show-2::after {
+    content: "Products";
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 60px;
+    font-size: 12px !important;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: #101935;
+    padding: 5px 15px;
+    border: 1px solid #37446B;
+    border-radius: 10px;
+    z-index: 999;
+    color: #939ca5;
+    overflow: visible;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.dash-li-name-show-2:hover::after {
+    display: block;
+    z-index: 999;
+    color: #939ca5;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+
+.dash-li-name-show-3::after {
+    content: "Users";
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 60px;
+    font-size: 12px !important;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: #101935;
+    padding: 5px 15px;
+    border: 1px solid #37446B;
+    border-radius: 10px;
+    z-index: 999;
+    color: #939ca5 !important;
+    overflow: visible;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.dash-li-name-show-3:hover::after {
+    display: block;
+    z-index: 999;
+    color: #939ca5;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+
+.dash-li-name-show-4::after {
+    content: "Orders";
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 60px;
+    font-size: 12px !important;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: #101935;
+    padding: 5px 15px;
+    border: 1px solid #37446B;
+    border-radius: 10px;
+    z-index: 999;
+    color: #939ca5 !important;
+    overflow: visible;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.dash-li-name-show-4:hover::after {
+    display: block;
+    z-index: 999;
+    color: #939ca5;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
 }
 
 /* 
@@ -279,6 +389,25 @@ body {
     transition: var(--transition-half-s);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 } */
+.logout-btn-none {
+    display: none;
+}
+
+.logoname {
+    display: block;
+}
+
+.logonamehide {
+    display: none;
+}
+
+.leftarrow-menu-hide {
+    display: none;
+}
+
+.bottom-user-name-hide {
+    display: none;
+}
 
 .toggle-box-container svg {}
 
@@ -289,6 +418,7 @@ body {
 }
 
 .sidebar-li {
+    position: relative;
     margin-top: 4px;
     border-radius: 8px;
     transition: var(-transition-half-s);
@@ -383,6 +513,9 @@ body {
     width: calc(100% - 230px);
     padding: 30px;
 }
+.right-content-section-flex {
+    width: calc(100% - 86px);
+}
 
 .right-content-innerBox {
     width: 85%;
@@ -476,7 +609,7 @@ body {
     margin: 20px;
     width: 200px;
     height: 100px;
-  }
+}
 
 .progress-1 {
     position: relative;
@@ -518,6 +651,7 @@ body {
     /* half azure */
     border-right-color: #6C72FF;
 }
+
 .progress-1 span {
     color: #FFF;
     font-size: 36px;
@@ -526,9 +660,11 @@ body {
     font-weight: 600;
     line-height: 16px;
 }
-.progress-1 p{
+
+.progress-1 p {
     padding-top: 10px;
 }
+
 .bg7 {
     background-color: #9A91FB !important;
 }
@@ -958,7 +1094,8 @@ body {
     overflow: auto;
     display: block;
 }
-.rightContentProductAdminScroll{
+
+.rightContentProductAdminScroll {
     max-height: 70vh;
     overflow: auto;
     display: block;
@@ -990,4 +1127,18 @@ body {
 .rightContentProductAdminScroll::-webkit-scrollbar-thumb {
     background: #37446B;
     height: 100px;
+}
+
+
+.mobsvg-toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 576px) {
+    .mobsvg-toggle {
+        display: flex;
+    }
+    .deskyop-arrow {
+        display: none;
+    }
 }

@@ -382,6 +382,34 @@ body {
     opacity: 1;
     transition: 0.5s ease-in-out;
 }
+.dash-li-name-show-6::after {
+    content: "John Carter";
+    display: none;
+    position: absolute;
+    top: 21px;
+    left: 70px;
+    font-size: 12px !important;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: #101935;
+    padding: 5px 15px;
+    width: 105px;
+    border: 1px solid #37446B;
+    border-radius: 10px;
+    z-index: 999;
+    color: #939ca5 !important;
+    overflow: visible;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.dash-li-name-show-6:hover::after {
+    display: block;
+    z-index: 999;
+    color: #939ca5;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
 
 /* 
 .toggle-box-container:hover {
